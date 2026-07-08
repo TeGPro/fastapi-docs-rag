@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtualenv
+.venv/
+venv/
+env/
+
+# Env / secrets
+.env
+.env.*
+*.key
+
+# IDE
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Testing / coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+
+# RAG-specific
+# локальные векторные БД / индексы
+chroma/
+*.faiss
+*.index
+qdrant_storage/
+storage/
+
+# кэш эмбеддингов и загруженных моделей
+.cache/
+models/
+*.bin
+*.pt
+*.safetensors
+
+# данные (документы для индексации — обычно не в гит)
+data/
+uploads/
+
+# логи
+*.log
+logs/
