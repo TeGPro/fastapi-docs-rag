@@ -2,6 +2,7 @@ from __future__ import annotations
 import re
 from config import DOCS_ROOT, EXCLUDE_FILES
 from dataclasses import dataclass
+from pathlib import Path
 
 
 @dataclass 
@@ -35,7 +36,7 @@ def load_documents(docs_root: Path = DOCS_ROOT) -> list[Document]:
     docs = []
     for p in docs_root.rglob("*.md"):
         
-        if p in EXCLUDE_FILES:
+        if p.name in EXCLUDE_FILES:
             continue
         
         doc = parse_document(p, docs_root)
@@ -51,3 +52,4 @@ if __name__ == "__main__":
     assert all(not d.path.startswith("/") for d in docs)
     assert "{*" not in docs[0].text
     print(f"OK: {len(docs)} документов")
+    
