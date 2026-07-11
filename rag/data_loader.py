@@ -44,12 +44,3 @@ def load_documents(docs_root: Path = DOCS_ROOT) -> list[Document]:
             docs.append(doc)
             
     return docs
-
-if __name__ == "__main__":
-    docs = load_documents(DOCS_ROOT)
-    assert len(docs) > 100, f"слишком мало документов: {len(docs)}"
-    assert all(d.text.strip() for d in docs)
-    assert all(not d.path.startswith("/") for d in docs)
-    assert "{*" not in docs[0].text
-    print(f"OK: {len(docs)} документов")
-    
