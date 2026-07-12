@@ -1,6 +1,6 @@
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from config import EMBEDDING_MODEL, EMBEDDING_DIM
+from rag.config import EMBEDDING_MODEL, EMBEDDING_DIM
 
 class Embedder():
     def __init__(self, model_name: str = EMBEDDING_MODEL) -> None:

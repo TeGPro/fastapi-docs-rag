@@ -1,5 +1,5 @@
-from config import CHUNK_OVERLAP, CHUNK_SIZE
-from data_loader import Document
+from rag.config import CHUNK_OVERLAP, CHUNK_SIZE
+from rag.data_loader import Document
 from dataclasses import dataclass
 
 @dataclass

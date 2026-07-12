@@ -1,6 +1,6 @@
 from __future__ import annotations
 import re
-from config import DOCS_ROOT, EXCLUDE_FILES
+from rag.config import DOCS_ROOT, EXCLUDE_FILES
 from dataclasses import dataclass
 from pathlib import Path
 
