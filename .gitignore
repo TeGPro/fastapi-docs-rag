@@ -48,7 +48,7 @@ models/
 *.safetensors
 
 # данные (документы для индексации — обычно не в гит)
-data/
+data/fastapi/
 uploads/
 
 # логи
