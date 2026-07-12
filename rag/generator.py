@@ -27,6 +27,7 @@ SYSTEM_PROMPT = (
 _client: Groq | None = None
 
 def _get_client() -> Groq:
+    load_dotenv()
     global _client
     if _client is None:
         key = os.environ.get("GROQ_API_KEY")

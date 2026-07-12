@@ -2,7 +2,7 @@ from pathlib import Path
 
 root_folder = Path.cwd()
 
-DOCS_ROOT = root_folder / "data"
+DOCS_ROOT = root_folder / "data" / "fastapi"
 INDEX_DIR = root_folder / "data" / "index"
 EXCLUDE_FILES = {"release-notes.md", "newsletter.md", "management-tasks.md"}
 

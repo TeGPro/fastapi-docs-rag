@@ -1,0 +1,17 @@
+[
+  { "question": "How do I make a query parameter optional?", "expected_doc": "tutorial/query-params.md", "note": "как сделать query-параметр необязательным" },
+  { "question": "How do I read a value from the URL path?", "expected_doc": "tutorial/path-params.md", "note": "как прочитать значение из пути URL" },
+  { "question": "How do I receive an uploaded file in a request?", "expected_doc": "tutorial/request-files.md", "note": "как принять загружаемый файл" },
+  { "question": "How do I configure CORS in FastAPI?", "expected_doc": "tutorial/cors.md", "note": "как настроить CORS" },
+  { "question": "How do I return a custom error response like 404?", "expected_doc": "tutorial/handling-errors.md", "note": "как вернуть кастомную ошибку, напр. 404" },
+  { "question": "How does dependency injection work in FastAPI?", "expected_doc": "tutorial/dependencies/index.md", "note": "как работает dependency injection" },
+  { "question": "How do I set a custom status code for a response?", "expected_doc": "tutorial/response-status-code.md", "note": "как задать статус-код ответа" },
+  { "question": "How do I add middleware to my application?", "expected_doc": "advanced/middleware.md", "note": "как добавить middleware" },
+  { "question": "How do I handle a websocket connection?", "expected_doc": "advanced/websockets.md", "note": "как работать с websocket-соединением" },
+  { "question": "How do I deploy a FastAPI app with Docker?", "expected_doc": "deployment/docker.md", "note": "как задеплоить в Docker" },
+  { "question": "My browser blocks requests from my frontend on a different domain, how do I fix this?", "expected_doc": "tutorial/cors.md", "note": "ПЕРЕФОРМУЛИРОВКА cors, без слова CORS: браузер блокирует запросы фронта с другого домена" },
+  { "question": "How can a user send me an image through a form?", "expected_doc": "tutorial/request-files.md", "note": "ПЕРЕФОРМУЛИРОВКА request-files, без file/upload: юзер шлёт картинку через форму" },
+  { "question": "How do I reuse the same validation logic across several endpoints?", "expected_doc": "tutorial/dependencies/index.md", "note": "ПЕРЕФОРМУЛИРОВКА dependencies, без dependency/inject: переиспользовать логику проверки в разных эндпоинтах" },
+  { "question": "How do I integrate FastAPI with Django ORM models?", "expected_doc": null, "note": "ЛОВУШКА: Django ORM в доках нет (только SQLModel/SQLAlchemy)" },
+  { "question": "How do I schedule recurring cron jobs inside FastAPI?", "expected_doc": null, "note": "ЛОВУШКА: встроенного планировщика cron у FastAPI нет" }
+]
