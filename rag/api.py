@@ -20,7 +20,6 @@ async def lifespan(app: FastAPI):
     try:
         store = VectorStore.load(INDEX_DIR)
     except FileNotFoundError:
-        # падаем на старте с понятным сообщением, а не на первом запросе
         raise RuntimeError("Index not found. Run: python scripts/build_index.py")
     yield
 
@@ -35,11 +34,9 @@ class AskRequest(BaseModel):
 
 class AskResponse(BaseModel):
     answer: str
-    sources: list[str]   # уникальные doc_path, порядок релевантности сохранён
-
+    sources: list[str]   
 
 def unique_paths(sources) -> list[str]:
-    """doc_path без дублей, порядок первого появления."""
     return list(dict.fromkeys(r.chunk.doc_path for r in sources))
 
 
